@@ -1,0 +1,10 @@
+<!-- update-profile.ejs -->
+<h1>Update Profile</h1>
+<form action="/update-profile" method="post">
+    <input type="hidden" name="currentUsername" value="<%= user %>">
+    <input type="text" name="newUsername" placeholder="New Username" required>
+    <input type="password" name="newPassword" placeholder="New Password" required>
+    <input type="text" name="newAddress" placeholder="New Address" required>
+    <input type="number" name="newAge" placeholder="New Age" required>
+    <button type="submit">Update Profile</button>
+</form>
